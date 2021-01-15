@@ -40,7 +40,7 @@ export default function FullWidthTabs() {
 
  useEffect(() => {
   const fetchPLData = async () => {
-    const response = await axios('http://api.football-data.org//v2/competitions/PL/scorers',{
+    const response = await axios('https://api.football-data.org//v2/competitions/PL/scorers',{
 
     headers:{
       'X-Auth-Token':'a12fe71181fb4a09aa1c36d1d3aee52c'
@@ -59,7 +59,7 @@ export default function FullWidthTabs() {
 
   }
   const fetchSpainData = async () => {
-    const response = await axios('http://api.football-data.org//v2/competitions/PD/scorers',{
+    const response = await axios('https://api.football-data.org//v2/competitions/PD/scorers',{
 
     headers:{
       'X-Auth-Token':'a12fe71181fb4a09aa1c36d1d3aee52c'
@@ -75,7 +75,7 @@ export default function FullWidthTabs() {
 
   }
   const fetchItalyData = async () => {
-    const response = await axios('http://api.football-data.org//v2/competitions/SA/scorers',{
+    const response = await axios('https://api.football-data.org//v2/competitions/SA/scorers',{
 
     headers:{
       'X-Auth-Token':'a12fe71181fb4a09aa1c36d1d3aee52c'
@@ -92,7 +92,7 @@ export default function FullWidthTabs() {
 
   }
   const fetchGermanyData = async () => {
-    const response = await axios('http://api.football-data.org//v2/competitions/BL1/scorers',{
+    const response = await axios('https://api.football-data.org//v2/competitions/BL1/scorers',{
 
     headers:{
       'X-Auth-Token':'a12fe71181fb4a09aa1c36d1d3aee52c'
@@ -108,7 +108,7 @@ export default function FullWidthTabs() {
   }
 
   const fetchCLData = async () => {
-    const response = await axios('http://api.football-data.org//v2/competitions/CL/scorers',{
+    const response = await axios('https://api.football-data.org//v2/competitions/CL/scorers',{
 
     headers:{
       'X-Auth-Token':'a12fe71181fb4a09aa1c36d1d3aee52c'

@@ -38,7 +38,7 @@ export default function FullWidthTabs() {
 
  useEffect(() => {
   const fetchPLData = async () => {
-    const response = await axios('http://api.football-data.org/v2/competitions/2021/standings?code=PL',{
+    const response = await axios('https://api.football-data.org/v2/competitions/2021/standings?code=PL',{
 
     headers:{
       'X-Auth-Token':'a12fe71181fb4a09aa1c36d1d3aee52c'
@@ -54,7 +54,7 @@ export default function FullWidthTabs() {
 
   }
   const fetchSpainData = async () => {
-    const response = await axios('http://api.football-data.org/v2/competitions/PD/standings',{
+    const response = await axios('https://api.football-data.org/v2/competitions/PD/standings',{
 
     headers:{
       'X-Auth-Token':'a12fe71181fb4a09aa1c36d1d3aee52c'
@@ -70,7 +70,7 @@ export default function FullWidthTabs() {
 
   }
   const fetchItalyData = async () => {
-    const response = await axios('http://api.football-data.org/v2/competitions/SA/standings',{
+    const response = await axios('https://api.football-data.org/v2/competitions/SA/standings',{
 
     headers:{
       'X-Auth-Token':'a12fe71181fb4a09aa1c36d1d3aee52c'
@@ -88,7 +88,7 @@ export default function FullWidthTabs() {
 
   }
   const fetchGermanyData = async () => {
-    const response = await axios('http://api.football-data.org/v2/competitions/BL1/standings',{
+    const response = await axios('https://api.football-data.org/v2/competitions/BL1/standings',{
 
     headers:{
       'X-Auth-Token':'a12fe71181fb4a09aa1c36d1d3aee52c'
