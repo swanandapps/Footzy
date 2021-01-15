@@ -10,28 +10,30 @@ import TableRow from '@material-ui/core/TableRow';
 
 const columns = [
 
- 
-  {
-    id: 'Difference',
-    label: 'GD',
-    minWidth: 5,
-    align: 'center',
-  },
-  { id: 'Form', label: 'Form',  align: 'left', minWidth: 10 },
-
+  { id: 'Rank', label: 'Rank', align:'center', minWidth: 10 },
+  { id: 'Crest', label: 'Club', align:'left', minWidth: 10 },
+  { id: 'Club', label: '', align:'left', minWidth: 60 },
+  { id: 'Played', label: 'Played',  align: 'center', minWidth: 5 },
   {
     id: 'Points',
     label: 'Points',
     minWidth: 5,
     align: 'center',
   },
+  { id: 'Form', label: 'Form',  align: 'left', minWidth: 10 },
+
+
+  {
+    id: 'Difference',
+    label: 'GD',
+    minWidth: 5,
+    align: 'center',
+  },
+
+
 
  
-  { id: 'Played', label: 'Played',  align: 'center', minWidth: 5 },
   
-  { id: 'Club', label: '', align:'left', minWidth: 60 },
-  { id: 'Crest', label: 'Club', align:'left', minWidth: 1 },
-  { id: 'Rank', label: 'Rank', align:'center', minWidth: 1 },
 
 
 
@@ -80,7 +82,7 @@ var rows=[]
   return (
     <Paper className={classes.root}>
     <TableContainer   className={classes.container}>
-        <Table stickyHeader aria-label="sticky table">
+        <Table style={{  display: 'table-row'}} >
           <TableHead>
             <TableRow>
               {columns.map((column) => (
@@ -95,7 +97,7 @@ var rows=[]
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => {
+            {rows.map((row) => {
               return (
                 <TableRow hover role="checkbox" tabIndex={-1} key={row.club}>
                   {columns.map((column) => {             

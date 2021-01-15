@@ -121,13 +121,13 @@ export default function FullWidthTabs() {
 
         <div>
 
-          <h3 style={{'text-align':'left', 'margin-left':'3%'}}>Premier League</h3>
+          <h4 style={{'text-align':'left', 'margin-left':'3%'}}>Premier League</h4>
 
         <StandingsTable footzy={footzyPL}/>
 
         </div>
 <div>
-<h3 style={{'text-align':'left', 'margin-left':'3%'}}>La Liga</h3>
+<h4 style={{'text-align':'left', 'margin-left':'3%'}}>La Liga</h4>
 
 
 <StandingsTable footzy={footzySpain}/>
@@ -135,7 +135,7 @@ export default function FullWidthTabs() {
 </div>
 
 <div>
-<h3 style={{'text-align':'left', 'margin-left':'3%'}}>Serie A</h3>
+<h4 style={{'text-align':'left', 'margin-left':'3%'}}>Serie A</h4>
 
 <StandingsTable footzy={footzyItaly}/>
 
@@ -143,7 +143,7 @@ export default function FullWidthTabs() {
 </div>
 
 <div>
-<h3 style={{'text-align':'left', 'margin-left':'3%'}}>Bundesliga</h3>
+<h4 style={{'text-align':'left', 'margin-left':'3%'}}>Bundesliga</h4>
 
 
 <StandingsTable footzy={footzyGermany}/>

@@ -1,9 +1,7 @@
 import React , {useEffect}from 'react';
-import SwipeableViews from 'react-swipeable-views';
+
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
-
-import axios from 'axios'
 
 
 //components
@@ -34,7 +32,7 @@ const theme = createMuiTheme({
 export default function FullWidthTabs() {
   const [value, setValue] = React.useState(0);
  
-
+   const isStandings=false  
 
 
   const handleChange = (event, newValue) => {
@@ -45,6 +43,37 @@ export default function FullWidthTabs() {
   const handleChangeIndex = (index) => {
     setValue(index);
   };
+
+
+  function ShowStandings ()
+  {
+
+
+
+    if(value===0){
+
+
+      return <StandingsPanel  value={0} index={0} dir='rtl'/>
+
+    }
+
+    else if(value===1){
+
+
+      return <TopPlayersPanel value={1} index={1} dir='rtl'/>
+
+    }
+    else if(value===2)
+    {
+
+     return <ChampionsLeaguePanel value={2} index={2} dir='rtl'/>
+
+
+
+    }
+
+
+  }
 
   return (
     <div className="">
@@ -65,17 +94,13 @@ export default function FullWidthTabs() {
         </Tabs>
       </AppBar>
       </ThemeProvider>
-      <SwipeableViews
-        axis= 'x-reverse'
-        index={value}
-        onChangeIndex={handleChangeIndex}
-      >
-        <StandingsPanel  value={0} index={0} dir='rtl'/>
-        <TopPlayersPanel value={1} index={1} dir='rtl'/>
-        <ChampionsLeaguePanel value={2} index={2} dir='rtl'/>
+      
 
 
-      </SwipeableViews>
+<ShowStandings />
+     
+
+
     </div>
   );
 }

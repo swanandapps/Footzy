@@ -12,6 +12,8 @@ export default function TabPanel(props) {
         id={`full-width-tabpanel-${index}`}
         aria-labelledby={`full-width-tab-${index}`}
         {...other}
+        style={{    direction: 'ltr'
+        }}
       >
         {value === index && (
           <Box style={{padding: '0px'}} p={3}>

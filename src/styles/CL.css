@@ -10,7 +10,7 @@
 .Card {
   display: grid;
   grid-template-columns: 40% 10% 40%;
-  text-align: left;
+  text-align: center;
   margin-top: 8%;
   margin-bottom: 5%;
   height: 60px;
