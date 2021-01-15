@@ -1,0 +1,30 @@
+.metadata {
+  display: block;
+  text-align: left;
+  margin-left: 5%;
+  font-size: 75%;
+  color: white;
+  padding-top: 5%;
+}
+
+.Card {
+  display: grid;
+  grid-template-columns: 40% 10% 40%;
+  text-align: left;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  height: 60px;
+}
+
+h3 {
+  margin: 0px;
+  color: white;
+  font-size: 95%;
+}
+
+.CL-Tab {
+  background-color: black;
+
+  height: 140px;
+  border-bottom: rgb(121, 197, 121) solid 1px;
+}
