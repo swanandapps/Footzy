@@ -1,19 +1,11 @@
-import Tab from '@material-ui/core/Tab';
+import Tab from "@material-ui/core/Tab";
 
+function CL({ setValue }) {
+  function setIndex() {
+    setValue(2);
+  }
 
-function CL({setValue}){
-
-
-    function setIndex()
-    {
-
-setValue(2)    }
-
-    return(
-
-        <Tab onClick={setIndex} label="Champions League" />
-
-    )
+  return <Tab onClick={setIndex} label="Champions League" />;
 }
 
-export default CL
+export default CL;
